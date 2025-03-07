@@ -46,11 +46,11 @@
             @foreach($laptops as $list)
                 <div class="col-md-4">
                     <div class="card">
-                        <img src={{ $list['image'] }} class="card-img-top img-custom" alt="Card Image">
+                        <img src={{ asset($list['image']) }} class="card-img-top img-custom" alt="Card Image">
                         <div class="card-body">
                         <h5 class="card-title">{{ $list["title"] }}</h5>
                         <p class="card-text">{{ $list["price"] }}</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <a href="/Home/{{$list['id']}}" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
