@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+@extends("layouts.layout")
+@section('title', 'Laptop Details')
+
+@section('style')
     <style>
         body {
             background-color: #121212;
@@ -27,10 +26,9 @@
             background-color: #0056b3;
         }
     </style>
-</head>
-<body>
+@endsection
 
-    <div class="container">
+@section('content')
         <a href="/" class="btn btn-secondary mb-3">← Back to Products</a>
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -44,8 +42,4 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-</body>
-</html>
+@endsection
